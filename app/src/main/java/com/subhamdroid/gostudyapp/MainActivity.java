@@ -23,7 +23,7 @@ public class MainActivity extends Activity {
         WebViewClientImpl webViewClient = new WebViewClientImpl(this);
         webView.setWebViewClient(webViewClient);
 
-        webView.loadUrl("https://gostudy.pythonanywhere.com/track/");
+        webView.loadUrl("https://www.google.com"); // the url you want to open
     }
 
 
