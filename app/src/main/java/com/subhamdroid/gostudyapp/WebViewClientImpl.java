@@ -18,6 +18,7 @@ public class WebViewClientImpl extends WebViewClient {
     @Override
     public boolean shouldOverrideUrlLoading(WebView webView, String url) {
         if(url.indexOf("youtube.com") > -1 || url.indexOf("leetcode.com") > -1 ){
+            // domains you dont want to open inside your webview
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
             activity.startActivity(intent);
             return true;
